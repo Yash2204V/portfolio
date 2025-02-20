@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { BookOpen, Code, Coffee } from 'lucide-react';
 
@@ -11,36 +10,36 @@ const About = () => {
       className="max-w-4xl mx-auto"
     >
       <h1 className="text-4xl font-bold text-gray-900 mb-8">About Me</h1>
-      
+
       <div className="bg-white rounded-lg shadow-md p-8 mb-8">
         <p className="text-lg text-gray-700 mb-6">
-          I'm a passionate full-stack developer with a deep love for creating elegant solutions to complex problems. 
-          With several years of experience in web development, I specialize in building scalable applications 
-          using modern technologies and best practices.
+          I'm Yash Varma, a passionate Full-Stack Developer specializing in MERN and PERN stacks. I love building 
+          scalable, maintainable applications with a strong focus on AI-driven efficiency and seamless user experiences. 
+          Whether it's e-commerce, security-focused applications, or learning experiences, I thrive on bringing ideas to life.
         </p>
-        
+
         <div className="grid md:grid-cols-3 gap-6 mt-8">
           <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
             <Code className="w-12 h-12 text-indigo-600 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Clean Code</h3>
+            <h3 className="text-xl font-semibold mb-2">Clean & Scalable</h3>
             <p className="text-gray-600 text-center">
-              Writing maintainable, efficient, and well-documented code is my priority
+              Writing optimized, maintainable, and efficient code is my top priority.
             </p>
           </div>
-          
+
           <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
             <BookOpen className="w-12 h-12 text-indigo-600 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Always Learning</h3>
+            <h3 className="text-xl font-semibold mb-2">Continuous Learning</h3>
             <p className="text-gray-600 text-center">
-              Constantly expanding my knowledge and staying up-to-date with latest technologies
+              Always exploring new technologies, from AI-powered development to Web 3.0 innovations.
             </p>
           </div>
-          
+
           <div className="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
             <Coffee className="w-12 h-12 text-indigo-600 mb-4" />
             <h3 className="text-xl font-semibold mb-2">Problem Solver</h3>
             <p className="text-gray-600 text-center">
-              Turning complex problems into simple, beautiful solutions
+              Turning complex challenges into simple, scalable solutions.
             </p>
           </div>
         </div>
@@ -50,18 +49,17 @@ const About = () => {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">My Journey</h2>
         <div className="space-y-4">
           <p className="text-gray-700">
-            My journey in software development began with a curiosity about how things work on the web. 
-            This curiosity led me to dive deep into various programming languages and frameworks, 
-            eventually becoming proficient in both frontend and backend development.
+            My journey in software development started with a curiosity about how web applications function. 
+            Over time, I mastered frontend and backend development, contributing to diverse projects ranging from 
+            e-commerce platforms to AI-integrated applications.
           </p>
           <p className="text-gray-700">
-            Throughout my career, I've had the opportunity to work on diverse projects ranging from 
-            e-commerce platforms to enterprise applications. Each project has added to my expertise 
-            and reinforced my passion for creating exceptional digital experiences.
+            I've participated in hackathons like Vihann007 DTU and Hackfest by GFG, collaborating on innovative projects. 
+            My experience spans full-stack development, cloud computing, and API integrations.
           </p>
           <p className="text-gray-700">
-            When I'm not coding, you'll find me contributing to open-source projects, mentoring 
-            aspiring developers, or exploring new technologies to expand my skill set.
+            Apart from coding, I contribute to open-source projects, mentor aspiring developers, and experiment with 
+            emerging tech like AI-powered automation.
           </p>
         </div>
       </div>

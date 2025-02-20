@@ -4,9 +4,9 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      company: 'WEBXLA',
-      position: 'Trainee Software Engineer',
-      duration: '2025 - Present',
+      company: 'WEBXELA',
+      position: 'Software Engineer Intern',
+      duration: 'Feb 2025 - Present',
       description: [
         'Provided mentorship to teams, assisting with debugging and optimizing their projects.',
         'Collaborated with professionals to innovate solutions.'
@@ -15,7 +15,7 @@ const Experience = () => {
     {
       company: 'Geek Room',
       position: 'Organizer - The Pears Global Hackathon',
-      duration: '2025 - Present',
+      duration: 'Dec 2024 - Present',
       description: [
         'Managed event promotion and outreach, leading to participation from 150+ teams worldwide.',
         'Facilitated team coordination, ensuring a smooth experience for developers and attendees.'
@@ -24,7 +24,7 @@ const Experience = () => {
     {
       company: 'Hacker World SDGI Coding Club',
       position: 'Web Development Lead',
-      duration: '2024 - Present',
+      duration: 'May 2024 - Jan 2025',
       description: [
         'Organized coding events, hackathons, and technical seminars.',
         'Mentored junior developers and conducted code reviews to maintain high coding standards.'
