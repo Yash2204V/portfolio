@@ -1,5 +1,4 @@
-"# Portfolio Website
-
+# Portfolio 
 A modern, responsive portfolio website built with React, TypeScript, and Vite. Features smooth animations, 3D elements, and a clean design to showcase projects, skills, and experience.
 
 ## 🚀 Features
