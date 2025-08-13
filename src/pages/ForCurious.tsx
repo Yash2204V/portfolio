@@ -9,7 +9,7 @@ const ForCurious = () => {
       excerpt: "Unlock Potential Within",
       link: "https://yash-v22.notion.site/Establish-MERN-App-134cbe14f3cc801ca570d07352a28b8d?pvs=4",
       category: "MERN Stack Guide",
-      imageUrl: "/images/L.webp",
+      imageUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125970/L_lng63w.webp",
       themeColor: "#FF5733",
       subtitle: "Establish MERN App with best practices and optimal workflow.",
       icon: "🔍"
@@ -20,7 +20,7 @@ const ForCurious = () => {
       excerpt: "Step into Possibilities",
       link: "https://yash-v22.notion.site/Git-GitHub-commands-134cbe14f3cc8088af5fcbf072ee63bf?pvs=4",
       category: "Version Control",
-      imageUrl: "/images/O.webp",
+      imageUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125973/O_d5htib.webp",
       themeColor: "#33C9FF",
       subtitle: "Master Git/GitHub Commands for seamless collaboration.",
       icon: "⭐"
@@ -31,7 +31,7 @@ const ForCurious = () => {
       excerpt: "Embark on a Journey Beyond",
       link: "https://yash-v22.notion.site/Web-Dev-Styling-Roadmap-134cbe14f3cc80d49ba9f0128cf4687b?pvs=4",
       category: "Frontend Roadmap",
-      imageUrl: "/images/V.webp",
+      imageUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125974/V_hw5vlx.webp",
       themeColor: "#FFD700",
       subtitle: "Styling Mastery through modern web design principles.",
       icon: "🛣️"
@@ -42,18 +42,11 @@ const ForCurious = () => {
       excerpt: "Rise to New Heights",
       link: "https://yash-v22.notion.site/",
       category: "Backend Architecture",
-      imageUrl: "/images/E.webp",
+      imageUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125969/E_um3fzx.webp",
       themeColor: "#c376ff",
       subtitle: "Backend Structure optimization for scalable applications.",
       icon: "📂"
     }
-  ];
-
-  const categories = [
-    { name: 'All', count: posts.length, active: true },
-    { name: 'Frontend', count: 1, active: false },
-    { name: 'Backend', count: 2, active: false },
-    { name: 'DevOps', count: 1, active: false }
   ];
 
   return (
@@ -63,7 +56,7 @@ const ForCurious = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="text-center mb-16 flex flex-col justify-start">
+        <div className="mb-16 flex flex-col justify-start">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}

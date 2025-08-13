@@ -21,7 +21,7 @@ const Home = () => {
                 className="flex items-center space-x-4 mb-8 mt-4 lg:mt-0">
                 <div className="w-12 h-12 bg-gradient-to-br from-zinc-700 to-zinc-800 rounded-full flex items-center justify-center">
                   <span className="text-white font-semibold ">
-                    <img className='' src="./name.png" alt="" />
+                    <img className='' src="https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125970/name_p8gzx0.png" alt="logo" />
                   </span>
                 </div>
                 <span className="text-zinc-400 font-medium">Hi I'm Yash Varma</span>
@@ -128,7 +128,7 @@ const Home = () => {
                   {/* Simple border */}
                   <div className="absolute inset-0 bg-gradient-to-br from-zinc-700 to-zinc-800 rounded-2xl p-1">
                     <img
-                      src="/profile.png"
+                      src="https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125973/profile-1_ih0cu7.png"
                       alt="Yash Varma"
                       className="w-full h-full rounded-2xl object-cover"
                     />

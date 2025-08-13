@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Award, ExternalLink, Calendar } from 'lucide-react';
+import { Award, ExternalLink, Calendar, Link } from 'lucide-react';
 
 const Certifications = () => {
 
@@ -11,7 +11,7 @@ const Certifications = () => {
       date: "Jul 2025",
       description: "Verified understanding of JavaScript fundamentals, including syntax, functions, and basic problem-solving.",
       skills: ["JavaScript"],
-      credentialUrl: "", // add your actual link
+      credentialUrl: "", 
       badgeColor: "from-yellow-500 to-orange-500"
     },
     {
@@ -21,7 +21,7 @@ const Certifications = () => {
       date: "Mar 2025",
       description: "Served as organizer and moderator, managing teams, coordinating sessions, and ensuring smooth event execution.",
       skills: ["Event Management", "Organizing", "Moderation"],
-      credentialUrl: "#", // optional image link
+      credentialUrl: "#", 
       badgeColor: "from-purple-500 to-pink-500",
     },
     {
@@ -71,9 +71,8 @@ const Certifications = () => {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <div className="text-center mb-16 flex flex-col justify-start ">
+        transition={{ duration: 0.6 }} >
+        <div className="mb-16 flex flex-col justify-start ">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -85,6 +84,22 @@ const Certifications = () => {
           <p className="page-subtitle">
             My journey of continuous learning and professional development through industry-recognized 
             certifications and courses. Each certification represents a commitment to excellence and expertise.
+          </p>
+          <p className="text-gray-400 font-mono mt-3 text-sm lg:text-lg">
+            <Link className="inline mr-3" />
+            View Certifications on {" "}
+            <span className="font-semibold text-gray-200">
+              Licenses & Certifications
+            </span>{" "}
+            section:{" "}
+            <a
+              className="text-blue-400 hover:text-blue-300 transition-colors underline"
+              href="https://www.linkedin.com/in/yash-varma-"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/yash-varma-/
+            </a>
           </p>
         </div>
 
@@ -100,7 +115,7 @@ const Certifications = () => {
             >
               <div className="grid md:grid-cols-4 gap-6 items-start">
                 {/* Badge */}
-                <div className="flex justify-center md:justify-start">
+                <div className="flex justify-start">
                   <div className={`w-24 h-24 bg-gradient-to-br ${cert.badgeColor} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg`}>
                     <Award className="w-12 h-12 text-white" />
                   </div>

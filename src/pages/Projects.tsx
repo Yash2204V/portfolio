@@ -13,7 +13,7 @@ const Projects = () => {
         "A multimedia-rich platform currently under development, aiming to deliver interactive and engaging user experiences.",
       technologies: ["React.js", "TailwindCSS", "MongoDB", "Express.js", "Cloudinary", "Node.js"],
       videoUrl: "",
-      imgUrl: "/images/axoryn.jpg",
+      imgUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125968/axoryn_pe8wdb.jpg",
       color: "#9333ea",
       githubUrl: "https://github.com/Yash2204V/Axoryn",
     },
@@ -29,7 +29,7 @@ const Projects = () => {
         "React 18",
         "TailwindCSS"
       ],
-      videoUrl: "/glorious-tales.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125958/glorious-tales_e1bc4k.mp4",
       color: "#dc2626",
       liveUrl: "https://glorious-tales.vercel.app/",
       githubUrl: "https://github.com/Yash2204V/GloriousTales",
@@ -47,7 +47,7 @@ const Projects = () => {
         "TailwindCSS",
         "API"
       ],
-      videoUrl: "/duniya-mausam.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125941/duniya-mausam_se4lej.mp4",
       color: "#2563eb",
       liveUrl: "https://duniya-mausam.vercel.app/",
       githubUrl: "https://github.com/YASH2204V/duniya-mausam",
@@ -59,7 +59,7 @@ const Projects = () => {
       longDescription:
         "A modern e-commerce platform featuring secure payments, user authentication, and responsive design.",
       technologies: ["EJS", "Node.js", "Express.js", "MongoDB", "TailwindCSS"],
-      videoUrl: "/LavenDish.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125954/LavenDish_tf21kf.mp4",
       color: "#8c47af",
       liveUrl: "https://lavendish.onrender.com/",
       githubUrl: "https://github.com/YASH2204V/lavendish",
@@ -71,7 +71,7 @@ const Projects = () => {
       longDescription:
         "Platform connecting food donors with recipients to reduce waste and help communities.",
       technologies: ["HTML", "Bootstrap", "Node.js", "Express.js", "MongoDB"],
-      videoUrl: "/foodsavR.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125960/foodsavR_x4xkwg.mp4",
       color: "#776be1",
       liveUrl: "https://foodsavr.onrender.com/",
       githubUrl: "https://github.com/Yash2204V/foodsavr",
@@ -83,7 +83,7 @@ const Projects = () => {
       longDescription:
         "Advanced payment system with enhanced security features and seamless user experience.",
       technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
-      videoUrl: "/pay-safe.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125951/pay-safe_kzuapw.mp4",
       color: "#14a398",
       githubUrl: "https://github.com/Yash2204V/paysafe",
     },
@@ -94,7 +94,7 @@ const Projects = () => {
       longDescription:
         "Comprehensive travel platform with booking, itinerary planning, and local recommendations.",
       technologies: ["EJS", "Tailwindcss", "Node.js", "MongoDB"],
-      videoUrl: "/trip-with-ease.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125954/trip-with-ease_bi6u31.mp4",
       color: "#f97316",
       liveUrl: "https://trip-with-ease.onrender.com/",
       githubUrl: "https://github.com/Yash2204V/trip-with-ease",
@@ -106,11 +106,10 @@ const Projects = () => {
       longDescription:
         "Dynamic document creation tool with real-time editing and beautiful animations.",
       technologies: ["React", "Framer Motion"],
-      videoUrl: "/mini-docs.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125949/mini-docs_xuauu4.mp4",
       color: "#15803c",
       githubUrl: "https://github.com/Yash2204V/mini-docs-react",
-    },
- 
+    }
   ];
 
   return (
