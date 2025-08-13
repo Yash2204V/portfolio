@@ -1,110 +1,37 @@
-import React from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Link, Outlet } from 'react-router-dom';
+import DockNavigation from './DockNavigation';
 
 const Layout = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const location = useLocation();
-
-  const navigation = [
-    { name: 'Home', path: '/' },
-    { name: 'Skills', path: '/skills' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Experience', path: '/experience' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
-  ];
-
-  const isActive = (path: string) => {
-    return location.pathname === path;
-  };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex">
-              <Link to="/" className="flex-shrink-0 flex items-center">
-                {/* <span className="text-2xl font-bold text-gray-900">Portfolio</span>
-                 */}
-                 <img width="50" className="text-2xl font-bold bg-gray-900 rounded-full" src="./name.png" />
-              </Link>
-            </div>
-
-            {/* Desktop Navigation */}
-            <div className="hidden sm:flex sm:space-x-8">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`inline-flex items-center px-1 pt-1 text-sm font-medium ${
-                    isActive(item.path)
-                      ? 'text-indigo-600 border-b-2 border-indigo-600'
-                      : 'text-gray-500 hover:text-gray-700'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="sm:hidden flex items-center">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
-              >
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
+    <div className="min-h-screen bg-zinc-900 text-white relative">
+      {/* Minimal Top Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-900/80 backdrop-blur-md border-b border-zinc-800">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="flex justify-between items-center h-16">
+            {/* Logo */}
+            <Link to="/" className="flex items-center space-x-3">
+              <span className="text-white font-semibold text-lg">Yash Varma</span>
+              <span className="text-zinc-500 text-sm hidden sm:block">Full-Stack Developer</span>
+            </Link>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="sm:hidden">
-            <div className="pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`block pl-3 pr-4 py-2 text-base font-medium ${
-                    isActive(item.path)
-                      ? 'text-indigo-600 bg-indigo-50'
-                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
       </nav>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Main Content */}
+      <main className="pt-16">
         <Outlet />
       </main>
 
-      <footer className="bg-white border-t">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex justify-center space-x-6">
-            <a target='_blank' href="https://linkedin.com/in/yash-varma-/" className="text-gray-400 hover:text-gray-500">
-              <Linkedin size={24} />
-            </a>
-            <a target='_blank' href="https://github.com/YASH2204V/" className="text-gray-400 hover:text-gray-500">
-              <Github size={24} />
-            </a>
-            <a target='_blank' href="mailto:yash.v220104@gmail.com" className="text-gray-400 hover:text-gray-500">
-              <Mail size={24} />
-            </a>
+      {/* Dock Navigation for Mobile */}
+      <DockNavigation />
+
+      {/* Minimal Footer */}
+      <footer className="border-t border-zinc-800 bg-zinc-900/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8">
+          <div className="text-center text-zinc-500 text-sm">
+            © {new Date().getFullYear()} Yash Varma. All rights reserved.
           </div>
-          <p className="mt-4 text-center text-gray-400">
-            ©{new Date().getFullYear()} Yash Varma | All rights reserved.
-          </p>
         </div>
       </footer>
     </div>

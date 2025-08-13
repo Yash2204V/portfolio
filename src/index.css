@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-/* Space Grotesk */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+/* Premium Minimal Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-/* Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,23 +10,108 @@
   html {
     font-family: 'Inter', system-ui, sans-serif;
     scroll-behavior: smooth;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
   
-  /* Noise texture overlay */
-  .noise-overlay {
-    position: relative;
+  body {
+    background: #1a1a1a;
+    color: #ffffff;
+    overflow-x: hidden;
+    line-height: 1.6;
   }
 
-  .noise-overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.05;
-    pointer-events: none;
-    z-index: 0;
+  /* Clean Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  /* Minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2a2a2a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6a6a6a;
+  }
+}
+
+@layer components {
+  /* Minimal Card */
+  .minimal-card {
+    @apply bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 backdrop-blur-sm;
+    transition: all 0.3s ease;
+  }
+
+  .minimal-card:hover {
+    @apply border-zinc-700 bg-zinc-900/70;
+  }
+
+  /* Minimal Button */
+  .minimal-button {
+    @apply px-6 py-3 bg-white text-black font-medium rounded-lg relative overflow-hidden;
+    transition: all 0.3s ease;
+  }
+
+  .minimal-button:hover {
+    @apply bg-gray-100 transform scale-105;
+  }
+
+  .minimal-button-outline {
+    @apply px-6 py-3 border border-zinc-600 text-white font-medium rounded-lg hover:border-zinc-500 hover:bg-zinc-800/50;
+    transition: all 0.3s ease;
+  }
+
+  /* Page Layout */
+  .page-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-12 py-16;
+  }
+
+  .page-title {
+    @apply text-4xl md:text-5xl font-bold text-white mb-6;
+  }
+
+  .page-subtitle {
+    @apply text-lg text-zinc-400 max-w-2xl leading-relaxed;
+  }
+
+  /* Navigation */
+  .nav-link {
+    @apply text-zinc-400 hover:text-white transition-colors duration-300 font-medium;
+  }
+
+  .nav-link.active {
+    @apply text-white;
+  }
+
+  /* Minimal dock */
+  .dock-nav {
+    backdrop-filter: blur(20px);
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .dock-item {
+    @apply p-3 rounded-xl transition-all duration-300;
+  }
+
+  .dock-item:hover {
+    @apply bg-white/10 transform scale-110;
+  }
+
+  .dock-item.active {
+    @apply bg-white/15;
   }
 }

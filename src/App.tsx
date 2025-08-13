@@ -5,11 +5,9 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import ForCurious from './pages/ForCurious';
+import Certifications from './pages/Certifications';
 import { Outlet } from 'react-router-dom';
-
-
 
 function App() {
   return (
@@ -18,12 +16,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
           <Route path="skills" element={<Skills />} />
           <Route path="projects" element={<Projects />} />
           <Route path="experience" element={<Experience />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="certifications" element={<Certifications />} />
+          <Route path="for-curious" element={<ForCurious />} />
         </Route>
       </Routes>
     </Router>

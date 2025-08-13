@@ -2,8 +2,10 @@ export interface Project {
   id: number;
   title: string;
   description: string;
+  longDescription: string;
   technologies: string[];
   videoUrl: string;
+  imgUrl?: string;
   color: string;
   liveUrl?: string;
   githubUrl?: string;
