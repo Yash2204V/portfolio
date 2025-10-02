@@ -12,9 +12,9 @@ const Projects = () => {
       longDescription:
         "A multimedia-rich platform currently under development, aiming to deliver interactive and engaging user experiences.",
       technologies: ["React.js", "TailwindCSS", "MongoDB", "Express.js", "Cloudinary", "Node.js"],
-      videoUrl: "",
-      imgUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125968/axoryn_pe8wdb.jpg",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1759384485/axoryn_yqfvie.mp4",
       color: "#9333ea",
+      liveUrl: "https://axoryn.vercel.app/",
       githubUrl: "https://github.com/Yash2204V/Axoryn",
     },
     {
