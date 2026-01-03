@@ -4,6 +4,19 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
+      company: 'TECHPOTLI - Matoshi Infotech',
+      position: 'Software Engineer',
+      duration: 'Sept 2025 - Present',
+      status: 'Ongoing',
+      description: [
+        'Built and customized 120+ templates and edited multiple client applications, improving usability and overall design consistency.',
+        'Strengthened technical workflows by improving MERN stack components and refining Git/GitHub version control processes.',
+        'Optimized SEO, metadata, and performance metrics, achieving faster load times and enhanced project discoverability.'
+      ],
+      technologies: ['MERN Stack', 'React', 'Node.js', 'MongoDB', 'SEO', 'Git', 'GitHub'],
+      color: 'from-orange-500 to-red-500'
+    },
+    {
       company: 'WEBXELA',
       position: 'Software Engineer Intern',
       duration: 'Feb 2025 - Aug 2025',
@@ -46,8 +59,8 @@ const Experience = () => {
 
 
   const getStatusColor = (status: string) => {
-    return status === 'Current' 
-      ? 'text-emerald-400 bg-emerald-500/20 border-emerald-500/30' 
+    return status === 'Current'
+      ? 'text-emerald-400 bg-emerald-500/20 border-emerald-500/30'
       : 'text-purple-400 bg-purple-500/20 border-purple-500/30';
   };
 
@@ -60,7 +73,7 @@ const Experience = () => {
       >
         <h1 className="page-title">Professional Experience</h1>
         <p className="page-subtitle">
-          My journey through various roles, leading teams, mentoring developers, and building 
+          My journey through various roles, leading teams, mentoring developers, and building
           innovative solutions. Each experience has shaped my skills and leadership capabilities.
         </p>
 

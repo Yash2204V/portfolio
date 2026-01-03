@@ -30,7 +30,7 @@ const Skills = () => {
     {
       title: 'Web Technologies',
       icon: Globe,
-      skills: ['API Integration', 'OAuth'],
+      skills: ['API Integration', 'OAuth', 'SEO'],
       color: 'from-orange-500 to-red-500'
     },
     {
@@ -44,7 +44,7 @@ const Skills = () => {
   const proficiencyLevels = [
     { name: 'Advanced', percentage: 80, skills: ['JavaScript', 'React.js', 'Node.js','Express', 'MongoDB'] },
     { name: 'Intermediate', percentage: 60, skills: ['TypeScript', 'PostgreSQL', 'Next.js'] },
-    { name: 'Learning', percentage: 50, skills: ['AI/ML', 'Python', 'Docker'] }
+    { name: 'Learning', percentage: 50, skills: ['AI/ML', 'Python', 'Docker', 'SEO'] }
   ];
 
   return (

@@ -108,7 +108,7 @@
   }
 
   .dock-item:hover {
-    @apply bg-white/10 transform scale-110;
+    @apply bg-white/10 transform scale-125;
   }
 
   .dock-item.active {

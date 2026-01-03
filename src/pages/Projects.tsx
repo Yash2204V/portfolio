@@ -7,53 +7,63 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: "IntelliView AI",
+      description: "AI-Powered Mock Interview Platform",
+      longDescription:
+        "IntelliView-AI provides role-specific questions, supporting voice responses, and providing real-time and post-interview performance scoring with visualization graphs.",
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Framer Motion",
+        "MongoDB",
+        "Groq AI",
+        "Web Speech API"
+      ],
+      videoUrl: "",
+      imgUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1767469306/intelliview-ai_kaqdyk.avif",
+      color: "#0ea5e9",
+      githubUrl: "",
+    },
+    {
+      id: 2,
       title: "Axoryn",
       description: "Next-Gen Multimedia Website",
       longDescription:
         "A multimedia-rich platform currently under development, aiming to deliver interactive and engaging user experiences.",
       technologies: ["React.js", "TailwindCSS", "MongoDB", "Express.js", "Cloudinary", "Node.js"],
-      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1759384485/axoryn_yqfvie.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/2026-01-04_00-59-02_lbk2u1.mp4",
       color: "#9333ea",
       liveUrl: "https://axoryn.vercel.app/",
       githubUrl: "https://github.com/Yash2204V/Axoryn",
     },
     {
-      id: 2,
+      id: 3,
       title: "Glorious Tales",
       description: "Tribute Platform for India's Forgotten Heroes",
       longDescription:
         "An open-source contribution platform dedicated to freedom fighters, saints, sages, and revolutionaries of India. Built for immersive storytelling and historical preservation.",
-      technologies: [
-        "Express.js",
-        "MongoDB",
-        "React 18",
-        "TailwindCSS"
-      ],
+      technologies: ["Express.js", "MongoDB", "React 18", "TailwindCSS"],
       videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125958/glorious-tales_e1bc4k.mp4",
       color: "#dc2626",
       liveUrl: "https://glorious-tales.vercel.app/",
       githubUrl: "https://github.com/Yash2204V/GloriousTales",
     },
     {
-      id: 3,
+      id: 4,
       title: "Duniya Mausam",
       description: "Global Weather Forecasting Platform",
       longDescription:
         "A weather application providing real-time forecasts, using Python backend with Flask and a modern React-based frontend.",
-      technologies: [
-        "Flask",
-        "Python",
-        "React 18",
-        "TailwindCSS",
-        "API"
-      ],
+      technologies: ["Flask", "Python", "React 18", "TailwindCSS", "API"],
       videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125941/duniya-mausam_se4lej.mp4",
       color: "#2563eb",
       liveUrl: "https://duniya-mausam.vercel.app/",
       githubUrl: "https://github.com/YASH2204V/duniya-mausam",
     },
     {
-      id: 4,
+      id: 5,
       title: "Lavendish",
       description: "Stylish E-commerce Platform for Premium Bags",
       longDescription:
@@ -65,7 +75,7 @@ const Projects = () => {
       githubUrl: "https://github.com/YASH2204V/lavendish",
     },
     {
-      id: 5,
+      id: 6,
       title: "FoodSavR",
       description: "Food Recovery & Donation System",
       longDescription:
@@ -77,7 +87,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Yash2204V/foodsavr",
     },
     {
-      id: 6,
+      id: 7,
       title: "Pay Safe",
       description: "Secure Digital Payment Solution",
       longDescription:
@@ -88,7 +98,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Yash2204V/paysafe",
     },
     {
-      id: 7,
+      id: 8,
       title: "TripWithEase",
       description: "Smart Travel Planning Platform",
       longDescription:
@@ -100,7 +110,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Yash2204V/trip-with-ease",
     },
     {
-      id: 8,
+      id: 9,
       title: "Mini-Docs",
       description: "Interactive Document Management",
       longDescription:
@@ -112,6 +122,7 @@ const Projects = () => {
     }
   ];
 
+
   return (
     <div className="page-container">
       <motion.div
@@ -121,7 +132,7 @@ const Projects = () => {
       >
         <h1 className="page-title">Featured Projects</h1>
         <p className="page-subtitle">
-          A showcase of my recent work, featuring web applications built with modern technologies 
+          A showcase of my recent work, featuring web applications built with modern technologies
           and best practices. Each project demonstrates different aspects of full-stack development.
         </p>
 
@@ -152,11 +163,11 @@ const Projects = () => {
                   <Play className="w-12 h-12 text-white" />
                 </div>
               </div>
-              
+
               {/* Project Info */}
               <div className="space-y-4">
                 <div>
-                  <h2 
+                  <h2
                     className="text-2xl font-bold mb-2 group-hover:text-glow transition-all"
                     style={{ color: project.color }}
                   >
@@ -169,7 +180,7 @@ const Projects = () => {
                     {project.longDescription}
                   </p>
                 </div>
-                
+
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
@@ -182,7 +193,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 {/* Links */}
                 <div className="flex space-x-4 pt-4 border-t border-gray-700">
                   {project.liveUrl && (
