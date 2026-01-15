@@ -198,7 +198,7 @@ const Home = () => {
             className="flex flex-col justify-start w-full" >
             <Quote size={65} className='-scale-x-100' />
             <p className="text-xl text-zinc-300 leading-relaxed max-w-2xl mx-auto mb-10 mt-3">
-              I’m a hypocrite, but I wanna thrive till death. Innovation isn’t everything — my keen goal is to observe within, then do it.
+              I wanna thrive till death. Innovation isn't the only thing — my keen goal is to observe within, then do it.
             </p>
           </motion.div>
             <div className="flex justify-center">
