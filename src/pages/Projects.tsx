@@ -24,7 +24,8 @@ const Projects = () => {
       videoUrl: "",
       imgUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1767469306/intelliview-ai_kaqdyk.avif",
       color: "#0ea5e9",
-      githubUrl: "",
+      liveUrl: "https://intelli-view-ai.vercel.app/",
+      githubUrl: "https://github.com/Yash2204V/IntelliView-AI",
     },
     {
       id: 2,
@@ -33,7 +34,7 @@ const Projects = () => {
       longDescription:
         "A multimedia-rich platform currently under development, aiming to deliver interactive and engaging user experiences.",
       technologies: ["React.js", "TailwindCSS", "MongoDB", "Express.js", "Cloudinary", "Node.js"],
-      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/2026-01-04_00-59-02_lbk2u1.mp4",
+      videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1772895188/2026-01-04_00-59-02_lbk2u1_1_fleqa4.mp4",
       color: "#9333ea",
       liveUrl: "https://axoryn.vercel.app/",
       githubUrl: "https://github.com/Yash2204V/Axoryn",
