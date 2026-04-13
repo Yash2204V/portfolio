@@ -197,15 +197,15 @@ const Home = () => {
             viewport={{ once: true }}
             className="flex flex-col justify-start w-full" >
             <Quote size={65} className='-scale-x-100' />
-            <p className="text-xl text-zinc-300 leading-relaxed max-w-2xl mx-auto mb-10 mt-3">
-              I wanna thrive till death. Innovation isn't the only thing — my keen goal is to observe within, then do it.
+            <p className="text-2xl text-zinc-300 leading-relaxed italic max-w-2xl mx-auto mb-10 mt-3">
+              If the work is worth it, it absorbs "you" completely.
             </p>
           </motion.div>
             <div className="flex justify-center">
               <Link
                 to="/about"
                 className="minimal-button-outline text-2xl px-6 py-2 rounded-full border border-zinc-400 text-zinc-300 hover:text-white hover:border-white transition-all duration-300" >
-                Who am I ?
+                my journey
                 <ArrowRight className="ml-2 w-4 h-4 inline-block transition-transform group-hover:translate-x-1" />
               </Link>
             </div>

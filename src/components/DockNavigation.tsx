@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
@@ -25,6 +24,7 @@ const DockNavigation = () => {
   ];
 
   const isActive = (path: string) => location.pathname === path;
+  const activeItemName = navItems.find((item) => isActive(item.path))?.name ?? 'Home';
 
   return (
   <motion.div
@@ -32,9 +32,14 @@ const DockNavigation = () => {
     animate={{ y: 0, opacity: 1, x: '-50%' }}
     transition={{ delay: 1, duration: 0.8 }}
     className="fixed bottom-6 lg:bottom-12 left-1/2 z-50">
+      <div className="mb-3 flex justify-center md:hidden">
+        <p className="rounded-full border border-white/20 bg-black/60 px-3 py-1 text-sm font-semibold tracking-wide text-zinc-100 backdrop-blur-sm">
+          {activeItemName}
+        </p>
+      </div>
       <div className="dock-nav rounded-2xl px-4 py-3">
         <div className="flex items-center space-x-2">
-          {navItems.map((item, index) => {
+          {navItems.map((item) => {
             const IconComponent = item.icon;
             const active = isActive(item.path);
             
@@ -42,10 +47,14 @@ const DockNavigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`dock-item flex items-center justify-center w-10 h-10 ${
+                aria-label={item.name}
+                className={`dock-item group relative flex items-center justify-center w-10 h-10 ${
                   active ? 'active' : ''
                 }`}
               >
+                <span className="pointer-events-none absolute -top-11 left-1/2 z-20 hidden -translate-x-1/2 whitespace-nowrap rounded-md border border-white/20 bg-black/90 px-2.5 py-1 text-xs font-medium text-zinc-50 opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100 md:block">
+                  {item.name}
+                </span>
                 <IconComponent 
                   size={18} 
                   className={`transition-colors ${

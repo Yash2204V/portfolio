@@ -6,12 +6,12 @@ const Experience = () => {
     {
       company: 'TECHPOTLI - Matoshi Infotech',
       position: 'Software Engineer',
-      duration: 'Sept 2025 - Present',
-      status: 'Ongoing',
+      duration: 'Sept 2025 - March 2026',
+      status: 'Completed',
       description: [
-        'Built and customized 120+ templates and edited multiple client applications, improving usability and overall design consistency.',
-        'Strengthened technical workflows by improving MERN stack components and refining Git/GitHub version control processes.',
-        'Optimized SEO, metadata, and performance metrics, achieving faster load times and enhanced project discoverability.'
+        'Developed and customized 120 + production - ready templates across 40 + diverse industry categories, ensuring high - quality UI / UX and responsive design standards.',
+        'Refined MERN stack components and streamlined Git / GitHub workflows to facilitate efficient team collaboration and version control.',
+        'Optimized SEO, metadata, and performance for client applications, significantly reducing page load times and improving search engine visibility.'
       ],
       technologies: ['MERN Stack', 'React', 'Node.js', 'MongoDB', 'SEO', 'Git', 'GitHub'],
       color: 'from-orange-500 to-red-500'
