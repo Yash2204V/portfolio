@@ -128,7 +128,7 @@ const Home = () => {
                   {/* Simple border */}
                   <div className="absolute inset-0 bg-gradient-to-br from-zinc-700 to-zinc-800 rounded-2xl p-1">
                     <img
-                      src="https://res.cloudinary.com/dlgkhjygr/image/upload/v1755125973/profile-1_ih0cu7.png"
+                      src="https://res.cloudinary.com/dlgkhjygr/image/upload/v1782276792/image_skarhk.jpg"
                       alt="Yash Varma"
                       className="w-full h-full rounded-2xl object-cover"
                     />
@@ -205,7 +205,7 @@ const Home = () => {
               <Link
                 to="/about"
                 className="minimal-button-outline text-2xl px-6 py-2 rounded-full border border-zinc-400 text-zinc-300 hover:text-white hover:border-white transition-all duration-300" >
-                my journey
+                What I do?
                 <ArrowRight className="ml-2 w-4 h-4 inline-block transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
