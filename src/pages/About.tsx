@@ -11,8 +11,6 @@ const About = () => {
       >
         <h1 className="page-title">About Me</h1>
         <p className="page-subtitle">
-          Arrey, sabr kro yaar 😄 Itni curiosity! Chalo, thoda professionally introduce kar hi deta hoon – but with angrezi...
-          <br /><br />
           I'm Yash Varma, a passionate Full-Stack Developer specializing in MERN and PERN stacks. 
           I love building scalable, maintainable applications with a focus on AI-driven efficiency 
           and seamless user experiences.
