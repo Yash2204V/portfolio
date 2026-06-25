@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import DockNavigation from './DockNavigation';
+import PromoPopup from './PromoPopup';
 
 const Layout = () => {
 
@@ -34,6 +35,9 @@ const Layout = () => {
           </div>
         </div>
       </footer>
+
+      {/* Promo Popup */}
+      <PromoPopup />
     </div>
   );
 };

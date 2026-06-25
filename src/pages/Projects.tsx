@@ -24,7 +24,7 @@ const Projects = () => {
       videoUrl: "",
       imgUrl: "https://res.cloudinary.com/dlgkhjygr/image/upload/v1767469306/intelliview-ai_kaqdyk.avif",
       color: "#0ea5e9",
-      liveUrl: "https://intelli-view-ai.vercel.app/",
+      liveUrl: "https://intelliviewai.myprod.in/",
       githubUrl: "https://github.com/Yash2204V/IntelliView-AI",
     },
     {
@@ -36,7 +36,7 @@ const Projects = () => {
       technologies: ["React.js", "TailwindCSS", "MongoDB", "Express.js", "Cloudinary", "Node.js"],
       videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1772895188/2026-01-04_00-59-02_lbk2u1_1_fleqa4.mp4",
       color: "#9333ea",
-      liveUrl: "https://axoryn.vercel.app/",
+      liveUrl: "https://axoryn.myprod.in/",
       githubUrl: "https://github.com/Yash2204V/Axoryn",
     },
     {
@@ -48,7 +48,7 @@ const Projects = () => {
       technologies: ["Express.js", "MongoDB", "React 18", "TailwindCSS"],
       videoUrl: "https://res.cloudinary.com/dlgkhjygr/video/upload/v1755125958/glorious-tales_e1bc4k.mp4",
       color: "#dc2626",
-      liveUrl: "https://glorious-tales.vercel.app/",
+      liveUrl: "https://glorioustales.myprod.in/",
       githubUrl: "https://github.com/Yash2204V/GloriousTales",
     },
     {
